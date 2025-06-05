@@ -122,10 +122,27 @@ Note that multiple runs of `pdflatex` are required to resolve all cross-referenc
 ## Questions
 
 1. What happens if you omit `bibtex` from the compilation sequence?
+
+If you omit bibtex from the compilation, citation references and the bibliography 
+won't appear correctly—they’ll show as placeholders like [?].
+
 2. Why is a `.bib` file preferred over hardcoded bibliographies?
+
+A .bib file separates content from formatting, allowing automatic styling and easier updates across many entries.
+
 3. What is the difference between `\cite{}` and `\parencite{}`?
+
+\cite{} is a generic citation command (style depends on the bibliography package), 
+while \parencite{} (from biblatex) places citations in parentheses, often used in author-year styles.
+
 4. How can BibTeX help maintain consistency across multiple documents?
+
+BibTeX ensures consistent formatting and referencing by using the same .bib database 
+and citation style across documents.
+
 5. Can you reuse `references.bib` in future projects? Why?
+
+Yes, references.bib can be reused to save time and maintain a personal, growing bibliography for future projects.
 
 ## Advice
 
